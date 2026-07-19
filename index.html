@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Aplikasi SMPN 3 Makassar</title>
+    
+    <link rel="manifest" href="manifest.json">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1a365d">
+    <meta name="apple-mobile-web-app-title" content="SMPN 3 Mks">
+    <link rel="apple-touch-icon" href="https://muhasvanashadi12-cmyk.github.io/lamarita/logo.png">
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #1a365d;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Masukkan link Web App Apps Script Bapak di bawah ini -->
+    <iframe src="https://script.google.com/a/~/macros/s/AKfycbyEG_nhx4YvR72uV7hOWJ9DY5iSG5BxQSoygU79PpVDOy7EGE4ym1R_NB4DiDjM2l1ydw/exec"></iframe>
+
+    <script {
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                .then(reg => console.log('Service Worker terdaftar!', reg))
+                .catch(err => console.log('Gagal daftar Service Worker', err));
+            });
+        }
+    </script>
+</body>
+</html>
