@@ -1,0 +1,20 @@
+{
+  "short_name": "SMPN 3 Mks",
+  "name": "Aplikasi Sekolah SMPN 3 Makassar",
+  "icons": [
+    {
+      "src": "https://muhasvanashadi12-cmyk.github.io/lamarita/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://muhasvanashadi12-cmyk.github.io/lamarita/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#1a365d",
+  "display": "standalone",
+  "theme_color": "#1a365d"
+}
